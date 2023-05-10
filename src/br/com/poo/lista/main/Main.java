@@ -17,7 +17,7 @@ public class Main {
         Agenda agenda = new Agenda(nomeAgenda, emailAgenda, proprietarioAgenda, len);
         int opcao = -1;
         do {
-            System.out.println("        ◦ Sistema br.com.poo.lista.agenda.Agenda do " + agenda.getProprietario() + "\n        ◦ === Opções ===\n" + "        ◦ 1. Adicionar br.com.poo.lista.contato.Contato\n" + "        ◦ 2. Listar todos os Contatos\n" + "        ◦ 3. Buscar br.com.poo.lista.contato.Contato por posição\n" + "        ◦ 4. Consultar Quantidade de Contatos\n" + "        ◦ 0. Sair do Sistema");
+            System.out.println("        ◦ Sistema do " + agenda.getProprietario() + "\n        ◦ === Opções ===\n" + "        ◦ 1. Adicionar contato\n" + "        ◦ 2. Listar todos os Contatos\n" + "        ◦ 3. Buscar contato por posição\n" + "        ◦ 4. Consultar Quantidade de Contatos\n" + "        ◦ 0. Sair do Sistema");
 
             opcao = ui.lerDados().nextInt();
             switch (opcao) {
@@ -44,7 +44,7 @@ public class Main {
 
                     break;
                 case 3:
-                    ui.mostrarNaTela("Índice do br.com.poo.lista.contato");
+                    ui.mostrarNaTela("Índice do contato");
                     int indiceContato = ui.lerDados().nextInt();
                     ui.mostrarNaTela(agenda.buscarPorPosicao(indiceContato).obterDados());
                     break;

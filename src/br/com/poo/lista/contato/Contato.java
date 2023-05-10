@@ -23,7 +23,7 @@ public class Contato {
     }
 
     public String obterDados() {
-        return "br.com.poo.lista.contato.Contato: " + this.nome + " E-mail: " + this.email + " Telefone Principal: " + this.telefonePrincipal + " Telefone Secundário: " + this.telefoneSecundario;
+        return "Contato: " + this.nome + " E-mail: " + this.email + " Telefone Principal: " + this.telefonePrincipal + " Telefone Secundário: " + this.telefoneSecundario;
 
     }
 
